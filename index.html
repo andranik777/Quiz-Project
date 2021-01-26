@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quiz project</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="ml-3">
+    <div class="container">
+        <h1 class="mb-3 mt-3 fw-bold">
+            <span class="letter">Q</span>
+            <span class="letter">U</span>
+            <span class="letter">I</span>
+            <span class="letter">Z</span>
+            <span class="letter"></span>
+            <span class="letter">P</span>
+            <span class="letter">R</span>
+            <span class="letter">O</span>
+            <span class="letter">J</span>
+            <span class="letter">E</span>
+            <span class="letter">C</span>
+            <span class="letter">T</span>
+        </h1>
+        <div class="form-group gy-5">
+            <label class="badge bg-primary text-wrap">Today I want to answer</label>
+            <div class="row">
+                <select class="form-control col-sm-8 mt-2">
+            <option value="10" selected="selected">10 questions ~ normal mode </option>
+            <option value="20">20 questions ~ hard mode </option>
+            <option value="30">30 questions ~ survivor mode</option>
+        </select>
+                <button class="btn btn-primary col-sm-2 ml-3 mt-2" id="btn-submit" style="height:75%">validate</button>
+            </div>
+        </div>
+        <div id="main"></div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="text-center">
+                    <p id="result"></p>
+                    <div id="replay"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="anime.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
